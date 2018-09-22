@@ -12,11 +12,11 @@ five_dimensional_points = [[]]
 eight_dimensional_points = [[]]
 top_claims_list = [[]]
 
-for count in range(13):
-	five_dimensional_points.clear()
-	eight_dimensional_points.clear()
-	five_dimensional_points = read_csv_file("provider_type"+str(count)+".csv")
-	eight_dimensional_points = read_csv_file("provider_type"+str(count)+".csv")
+for count in range(5,12):
+	five_dimensional_points = []
+	eight_dimensional_points=[]
+	five_dimensional_points = read_csv_file("provider_type"+str(count+1)+".csv")
+	eight_dimensional_points = read_csv_file("provider_type"+str(count+1)+".csv")
 
 	#find high or low bound for distance function
 	globalvar.pl = 0
