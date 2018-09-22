@@ -27,8 +27,6 @@ for points in five_dimensional_points:
 	globalvar.dh = max(points[4], globalvar.dh)
 	globalvar.dl = min(points[4], globalvar.dl)
 
-bounds = [globalvar.pl, globalvar.dl, globalvar.ph, globalvar.dh]
-
 outlieness = []
 outlieness = calculate_outlieness(five_dimensional_points)
 
