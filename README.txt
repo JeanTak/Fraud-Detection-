@@ -15,7 +15,7 @@ Unsupervised fraud detection algorithm:
 3. list[int] find_k_nearest_neighbours(list[list[float]] points, int index1, int k);
                  ->using 5 dimensions and distance function, find nearest k points
                  ->output points' index
-4. list[float] calculate_outlieness(list[list[float]] points)
+4. list[float] calculate_outlieness(list[list[float]] points, list[list[float]] 7_dimensional_data)
                  ->points have 5 dimensions
                  ->using find_k_nearest_neighbors function, calculate average of the distance and calculate outliness for all the points
                  ->return the outlieness of all correponding points
