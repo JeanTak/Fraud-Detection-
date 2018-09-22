@@ -7,7 +7,7 @@ Unsupervised fraud detection algorithm:
 4a.rank the providers
 4b.rank the visits
  Functions:
-1. list[list[double]] read_csv_file();
+1. list[list[double]] read_csv_file(string filename);
 2. double find_distance(list[double] point1, list[double] point2)
                  ->calculate distance using normalized distance function
 3. list[int] find_k_nearest_neighbours(list[list[double]] points, int index1, int k);
