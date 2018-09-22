@@ -1,7 +1,7 @@
 # Fraud-Detection
 
 Unsupervised fraud detection algorithm:
- 1. Normalized distance
+1. Normalized distance
 2. find k-nearest neighbours for all points
 3. calculate outlieness for all points
 4a.rank the providers
