@@ -36,6 +36,5 @@ top_providers_list = [[]]
 top_providers_list = top_providers(outlieness, eight_dimensional_points)
 
 with open('provider.csv', 'wb') as f:  # Just use 'w' mode in 3.x
-	w = csv.DictWriter(f, top_providers_list.keys())
-	w.writeheader()
-	w.writerow(top_providers_list)
+	w = csv.writer(f)
+	w.writerows(top_providers_list)
