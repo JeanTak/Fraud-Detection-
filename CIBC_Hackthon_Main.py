@@ -26,10 +26,10 @@ for points in five_dimensional_points:
 outlieness = []
 outlieness = calculate_outlieness(five_dimensional_points)
 
-top_providers_list = {}
+top_providers_list = [[]]
 top_providers_list = top_providers(outlieness, eight_dimensional_points)
 
-#with open('provider.csv', 'wb') as f:  # Just use 'w' mode in 3.x
-	#w = csv.DictWriter(f, top_providers_list.keys())
-	#w.writeheader()
-	#w.writerow(top_providers_list)
+with open('provider.csv', 'wb') as f:  # Just use 'w' mode in 3.x
+	w = csv.DictWriter(f, top_providers_list.keys())
+	w.writeheader()
+	w.writerow(top_providers_list)
