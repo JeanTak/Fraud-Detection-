@@ -9,18 +9,18 @@ Unsupervised fraud detection algorithm:
 
 
  Functions:
-1. list[list[double]] read_csv_file(string filename);
-2. double find_distance(list[double] point1, list[double] point2)
+1. list[list[float]] read_csv_file(string filename);
+2. float find_distance(list[float] point1, list[float] point2)
                  ->calculate distance using normalized distance function
-3. list[int] find_k_nearest_neighbours(list[list[double]] points, int index1, int k);
+3. list[int] find_k_nearest_neighbours(list[list[float]] points, int index1, int k);
                  ->using 5 dimensions and distance function, find nearest k points
                  ->output points' index
-4. list[double] calculate_outlieness(list[list[double]] points)
+4. list[float] calculate_outlieness(list[list[float]] points)
                  ->points have 5 dimensions
                  ->using find_k_nearest_neighbors function, calculate average of the distance and calculate outliness for all the points
                  ->return the outlieness of all correponding points
-5. list[list[int and str]] top_100_providers(list[double]);
-6. list[list[int and str]] top_100_visits(list[double]);
+5. list[list[int and str]] top_100_providers(list[float]);
+6. list[list[int and str]] top_100_visits(list[float]);
 
 Files:
 
