@@ -5,7 +5,7 @@ import operator
 
 def top_providers(outlieness, eight_dimensional_data):	
 	provider_list = {}
-	outlieness = calculate_outlieness(eight_dimensional_data)
+	# outlieness = calculate_outlieness(eight_dimensional_data)
 
 	for i in range(len(outlieness)):
 		if (provider_list.get(eight_dimensional_data[i][2]) is None):
