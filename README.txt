@@ -15,5 +15,5 @@ Unsupervised fraud detection algorithm:
                  ->output points' index
 4. list[double] calculate_outlieness(list[list[double]] data)
                  ->using find_k_nearest_neighbors function, calculate average of the distance and calculate outliness for all the points
-5. list[int] top_100_providers(list[list[int]]);
-6. list[int] top_100_visits(list[list[]]);
+5. list[list[int and str]] top_100_providers(list[double]);
+6. list[list[int and str]] top_100_visits(list[double]);
