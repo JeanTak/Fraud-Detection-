@@ -1,8 +1,11 @@
 import math
 
+import globalvar
+
+
 def find_distance(point_1, point_2):
 #     c1 = calc_distance([100, 100, 1000, 1000])
-    c1 = calc_distance([pl, dl, ph, dh])
+    c1 = calc_distance([globalvar.pl, globalvar.dl, globalvar.ph, globalvar.dh])
     return (c1.euclidean_distance(point_1, point_2))
 
 class calc_distance:

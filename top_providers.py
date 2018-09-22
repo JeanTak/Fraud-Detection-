@@ -8,14 +8,16 @@ def top_providers(outlieness, eight_dimensional_data):
 	outlieness = calculate_outlieness(eight_dimensional_data)
 
 	for i in range(len(outlieness)):
-		provider_list[eight_dimensional_data[i][2]] += outlieness[i]
+		if (provider_list.get(eight_dimensional_data[i][2]) is None):
+			provider_list[eight_dimensional_data[i][2]] = outlieness[i]
+		else:
+			provider_list[eight_dimensional_data[i][2]] += outlieness[i]
 
 	sorted_list = sorted(provider_list.items(), key=operator.itemgetter(1), reverse=True)
-	providers = sorted_list.keys()
 
 	rank = []
-	for i in range(len(providers)):
-		rank.append([providers[i],i])
+	for i in range(len(sorted_list)):
+		rank.append([sorted_list[i][0],i+1])
 	
 	return rank
 
